@@ -7,33 +7,24 @@ public class ValidAnagramSolution
 {
     public bool IsAnagram(string s, string t)
     {
-        var hashSet = new Dictionary<char, int>();
-        foreach (var x in s)
-        {
-            if (!hashSet.ContainsKey(x))
-            {
-                hashSet.Add(x, 1);
-                continue;
-            }
+        if (s.Length != t.Length) return false;
+        var chars = new int[26];
 
-            hashSet[x]++;
+        for (var i = 0; i < s.Length; i++)
+        {
+            chars[s[i] - 'a']++;
+            chars[t[i] - 'a']--;
         }
 
-        foreach (var y in t)
+        foreach (var x in chars)
         {
-            if (!hashSet.TryGetValue(y, out var count))
+            if (x != 0)
             {
                 return false;
             }
-
-            if (count == 0)
-            {
-                return false;
-            }
-
-            hashSet[y]--;
         }
 
-        return hashSet.All(x => x.Value == 0);
+
+        return true;
     }
 }

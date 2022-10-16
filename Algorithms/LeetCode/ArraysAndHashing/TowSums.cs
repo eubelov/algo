@@ -12,30 +12,16 @@ public class TowSumsSolution
             return new[] { 0, 1 };
         }
 
-        var hash = new Dictionary<int, List<int>>();
-        for (var index = 0; index < nums.Length; index++)
+        var hash = new Dictionary<int, int>();
+        for (var i = 0; i < nums.Length; i++)
         {
-            var x = nums[index];
-            if (!hash.ContainsKey(x))
+            var diff = target - nums[i];
+            if (hash.TryGetValue(diff, out var ix))
             {
-                hash[x] = new();
+                return new[] { i, ix };
             }
 
-            hash[x].Add(index);
-        }
-
-        for (var index = 0; index < nums.Length; index++)
-        {
-            var num = nums[index];
-            var search = target - num;
-            if (hash.TryGetValue(search, out var ix))
-            {
-                var i2 = ix.SingleOrDefault(x => x != index, -1);
-                if (i2 != -1)
-                {
-                    return new[] { index,  i2};
-                }
-            }
+            hash[nums[i]] = i;
         }
 
         return Array.Empty<int>();
