@@ -1,4 +1,6 @@
-namespace Algorithms.LeetCode.Trees;
+using Xunit;
+
+namespace Algorithms.Trees.Leetcode;
 
 /// <summary>
 /// https://leetcode.com/problems/same-tree

@@ -1,4 +1,4 @@
-namespace Algorithms.LeetCode.Stack;
+namespace Algorithms.Stack.Leetcode;
 
 /// <summary>
 /// https://leetcode.com/problems/evaluate-reverse-polish-notation/

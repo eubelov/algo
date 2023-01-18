@@ -1,4 +1,4 @@
-namespace Algorithms.LeetCode.Trees;
+namespace Algorithms.Trees.Leetcode;
 
 /// <summary>
 /// https://leetcode.com/problems/invert-binary-tree

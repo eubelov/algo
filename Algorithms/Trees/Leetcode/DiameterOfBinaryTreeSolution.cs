@@ -1,4 +1,4 @@
-namespace Algorithms.LeetCode.Trees;
+namespace Algorithms.Trees.Leetcode;
 
 public class DiameterOfBinaryTreeSolution
 {

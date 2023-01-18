@@ -1,10 +1,18 @@
-namespace Algorithms.LeetCode.Trees;
+using Xunit;
+
+namespace Algorithms.Trees.Leetcode;
 
 /// <summary>
 /// https://leetcode.com/problems/subtree-of-another-tree/
 /// </summary>
 public class SubtreeOfAnotherTree
 {
+    [Fact]
+    public void Test()
+    {
+        IsSubtree(new(8, new(3, new(4, new(1), new(2)), new(5))), new(4, new(1), new(2)));
+    }
+
     public bool IsSubtree(TreeNode? root, TreeNode? subRoot)
     {
         if (subRoot == null)

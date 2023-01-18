@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace Algorithms.TwoPointers;
+namespace Algorithms.Stack.Leetcode;
 
 /// <summary>
 /// https://leetcode.com/problems/daily-temperatures/description/
