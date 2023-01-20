@@ -1,3 +1,5 @@
+using Xunit;
+
 namespace Algorithms.LeetCode.ArraysAndHashing;
 
 /// <summary>
@@ -5,6 +7,12 @@ namespace Algorithms.LeetCode.ArraysAndHashing;
 /// </summary>
 public class MostFrequentElements
 {
+    [Fact]
+    public void Test()
+    {
+        TopKFrequent(new[] { 1, 1, 1, 2, 2, 3 }, 2);
+    }
+
     public int[] TopKFrequent(int[] nums, int k)
     {
         var freq = new Dictionary<int, int>();
