@@ -1,26 +1,28 @@
+using Algorithms.Trees.Leetcode;
+
 namespace Algorithms.Trees.BinaryTree;
 
 public class Bfs
 {
-    public List<string> DoBfsIteratively(TreeNode? node)
+    public List<int> DoBfsIteratively(TreeNode? node)
     {
         if (node == null)
         {
             return new(0);
         }
 
-        var result = new List<string>();
+        var result = new List<int>();
         var queue = new Queue<TreeNode>();
         queue.Enqueue(node);
 
         while (queue.Count > 0)
         {
             var current = queue.Dequeue();
-            result.Add(current.Value);
+            result.Add(current.val);
 
-            if (current.Left != null) queue.Enqueue(current.Left);
+            if (current.left != null) queue.Enqueue(current.left);
 
-            if (current.Right != null) queue.Enqueue(current.Right);
+            if (current.right != null) queue.Enqueue(current.right);
         }
 
         Console.WriteLine(string.Join(" ", result));

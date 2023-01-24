@@ -1,35 +1,36 @@
+using Algorithms.Trees.Leetcode;
+
 namespace Algorithms.Trees.BinaryTree;
 
 public class Dfs
 {
-    public List<string> DoDfsIteratively(TreeNode root)
+    public List<int> DoDfsIteratively(TreeNode root)
     {
-        var result = new List<string>();
+        var result = new List<int>();
         var stack = new Stack<TreeNode>();
         stack.Push(root);
 
         while (stack.Count > 0)
         {
             var current = stack.Pop();
-            result.Add(current.Value);
+            result.Add(current.val);
 
-            if (current.Left != null) stack.Push(current.Left);
-
-            if (current.Right != null) stack.Push(current.Right);
+            if (current.left != null) stack.Push(current.left);
+            if (current.right != null) stack.Push(current.right);
         }
 
         Console.WriteLine(string.Join(" ", result));
         return result;
     }
 
-    public List<string> DoDfsRecursively(TreeNode? root)
+    public List<int> DoDfsRecursively(TreeNode? root)
     {
-        if (root == null) return new List<string>(0);
+        if (root == null) return new List<int>(0);
 
-        var leftValues = DoDfsRecursively(root.Left);
-        var rightValues = DoDfsRecursively(root.Right);
+        var leftValues = DoDfsRecursively(root.left);
+        var rightValues = DoDfsRecursively(root.right);
 
-        var result = new List<string> { root.Value };
+        var result = new List<int> { root.val };
         result.AddRange(leftValues);
         result.AddRange(rightValues);
 

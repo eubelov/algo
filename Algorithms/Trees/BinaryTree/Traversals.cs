@@ -12,9 +12,9 @@ public class Traversals
         PostOrder(new(5, new(3, new(2, new(1)), new(4)), new(6)));
     }
 
-    public void PreOrder(Leetcode.TreeNode root)
+    public void PreOrder(TreeNode root)
     {
-        void Dfs(Leetcode.TreeNode node)
+        void Dfs(TreeNode node)
         {
             if (node == null) return;
 
@@ -27,9 +27,9 @@ public class Traversals
         Dfs(root);
     }
 
-    public void InOrder(Leetcode.TreeNode root)
+    public void InOrder(TreeNode root)
     {
-        void Dfs(Leetcode.TreeNode node)
+        void Dfs(TreeNode node)
         {
             if (node == null) return;
 
@@ -41,9 +41,9 @@ public class Traversals
         Dfs(root);
     }
 
-    public void PostOrder(Leetcode.TreeNode root)
+    public void PostOrder(TreeNode root)
     {
-        void Dfs(Leetcode.TreeNode node)
+        void Dfs(TreeNode node)
         {
             if (node == null) return;
 

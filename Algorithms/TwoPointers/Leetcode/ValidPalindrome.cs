@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace Algorithms.LeetCode.TwoPointers;
+namespace Algorithms.TwoPointers.Leetcode;
 
 /// <summary>
 /// https://leetcode.com/problems/valid-palindrome/

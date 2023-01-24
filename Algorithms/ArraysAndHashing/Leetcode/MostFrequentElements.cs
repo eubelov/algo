@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace Algorithms.LeetCode.ArraysAndHashing;
+namespace Algorithms.ArraysAndHashing.Leetcode;
 
 /// <summary>
 /// https://leetcode.com/problems/top-k-frequent-elements

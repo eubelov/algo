@@ -1,6 +1,6 @@
 using System.Text;
 
-namespace Algorithms.LeetCode.ArraysAndHashing;
+namespace Algorithms.ArraysAndHashing.Leetcode;
 
 /// <summary>
 /// https://leetcode.com/problems/group-anagrams/

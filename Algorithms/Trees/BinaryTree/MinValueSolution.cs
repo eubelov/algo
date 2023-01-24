@@ -1,15 +1,17 @@
+using Algorithms.Trees.Leetcode;
+
 namespace Algorithms.Trees.BinaryTree;
 
 public static class MinValueSolution
 {
-    public static int MinValue(TreeNode<int>? node)
+    public static int MinValue(TreeNode node)
     {
         if (node == null) return int.MaxValue;
 
-        var l = MinValue(node.Left);
-        var r = MinValue(node.Right);
+        var l = MinValue(node.left);
+        var r = MinValue(node.right);
 
         var min = Math.Min(l, r);
-        return node.Value < min ? node.Value : min;
+        return node.val < min ? node.val : min;
     }
 }

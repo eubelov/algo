@@ -1,4 +1,4 @@
-namespace Algorithms.LeetCode.ArraysAndHashing;
+namespace Algorithms.ArraysAndHashing.Leetcode;
 
 /// <summary>
 /// https://leetcode.com/problems/longest-consecutive-sequence

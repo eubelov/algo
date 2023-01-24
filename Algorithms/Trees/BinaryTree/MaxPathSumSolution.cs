@@ -1,14 +1,16 @@
+using Algorithms.Trees.Leetcode;
+
 namespace Algorithms.Trees.BinaryTree;
 
 public static class MaxPathSumSolution
 {
-    public static int MaxPathSum(TreeNode<int>? node)
+    public static int MaxPathSum(TreeNode node)
     {
         if (node == null)
         {
             return 0;
         }
 
-        return node.Value + Math.Max(MaxPathSum(node.Left), MaxPathSum(node.Right));
+        return node.val + Math.Max(MaxPathSum(node.left), MaxPathSum(node.right));
     }
 }

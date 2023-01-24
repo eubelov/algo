@@ -1,4 +1,4 @@
-namespace Algorithms.LeetCode.TwoPointers;
+namespace Algorithms.TwoPointers.Leetcode;
 
 public class Stock
 {
