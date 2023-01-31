@@ -1,6 +1,4 @@
-using Algorithms.Graphs;
-
-namespace Algorithms.LeetCode.Graphs;
+namespace Algorithms.Graphs.Leetcode;
 
 /// <summary>
 /// https://leetcode.com/problems/clone-graph

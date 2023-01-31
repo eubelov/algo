@@ -1,4 +1,4 @@
-namespace Algorithms.LeetCode.Graphs;
+namespace Algorithms.Graphs.Leetcode;
 
 // https://leetcode.com/problems/number-of-islands
 public static class NumberOfIslands

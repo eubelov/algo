@@ -1,4 +1,4 @@
-namespace Algorithms.LeetCode.Graphs;
+namespace Algorithms.Graphs.Leetcode;
 
 public class SurroundedRegions
 {
