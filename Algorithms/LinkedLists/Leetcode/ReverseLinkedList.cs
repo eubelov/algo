@@ -9,6 +9,24 @@ public class ReverseLinkedList
 {
     public static class Solution
     {
+        public static ListNode ReverseList(ListNode head)
+        {
+            if (head == null) return null;
+
+            ListNode prev = null;
+            ListNode curr = head;
+
+            while (curr != null)
+            {
+                var tmp = curr.next;
+                curr.next = prev;
+                prev = curr;
+                curr = tmp;
+            }
+
+            return prev;
+        }
+
         public static ListNode ReverseListSequential(ListNode head)
         {
             if (head == null) return head;
