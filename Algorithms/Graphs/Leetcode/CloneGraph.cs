@@ -1,3 +1,5 @@
+using Algorithms.Graphs.Problems;
+
 namespace Algorithms.Graphs.Leetcode;
 
 /// <summary>
